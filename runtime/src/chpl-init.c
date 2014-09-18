@@ -208,6 +208,7 @@ void chpl_rt_init(int argc, char* argv[]) {
 // Called by "main.c:main(...)" and "cphl-init.c:chpl_library_finalize()".
 //
 void chpl_rt_finalize(int return_value) {
+    //chpl_rt_postUserCodeHook();
     chpl_exit_all(return_value);
 }
 
