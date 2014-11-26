@@ -43,8 +43,6 @@ ifeq ($(OPTIMIZE),1)
 RUNTIME_DEFS += -DCHPL_OPTIMIZE
 endif
 
-RUNTIME_DEFS += -fPIC
-
 # For HDFS support (and backwards compatibility)
 ifneq (,$(findstring hdfs,$(CHPL_MAKE_AUXFS)))
 	CHPL_AUXIO_INCLUDE ?= \
